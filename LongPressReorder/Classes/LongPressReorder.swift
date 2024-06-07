@@ -77,7 +77,7 @@ open class LongPressReorderTableView {
     /// Long press gesture recognizer
     private var longPress: UIGestureRecognizer?
     /// Optional delegate for overriding default behaviour. Normally a subclass of UI(Table)ViewController.
-    public var delegate: LongPressReorder?
+    public weak var delegate: LongPressReorder?
     /// Controls how the table will autoscroll, if at all.
     var scrollBehaviour: ScrollBehaviour
     /// Controls how much the selected row will "pop out" of the table.
